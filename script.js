@@ -140,7 +140,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Intro Video Logic
     const introOverlay = document.getElementById('intro-overlay');
     const introVideo = document.getElementById('intro-video');
-    const skipBtn = document.getElementById('skip-btn');
 
     const finishIntro = () => {
         if (introOverlay) {
@@ -155,14 +154,15 @@ document.addEventListener('DOMContentLoaded', () => {
         // Attempt autoplay
         introVideo.play().catch(error => {
             console.log("Autoplay prevented:", error);
-            // If autoplay fails (e.g. browser policy), show a play button or just skip
+            // If autoplay fails, user interaction (click) will dismiss/start it
         });
 
         introVideo.addEventListener('ended', finishIntro);
     }
 
-    if (skipBtn) {
-        skipBtn.addEventListener('click', () => {
+    if (introOverlay) {
+        // Click anywhere to skip
+        introOverlay.addEventListener('click', () => {
             if (introVideo) introVideo.pause();
             finishIntro();
         });
