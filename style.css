@@ -12,7 +12,7 @@
     --bg-color: #F8FAFC;
     /* Slate 50 */
     --white: #FFFFFF;
-    --nav-height: 100px;
+    --nav-height: 140px;
     --transition: all 0.3s ease;
 }
 
@@ -599,17 +599,17 @@ footer {
 }
 
 .logo-img {
-    height: 90px;
+    height: 120px;
     width: auto;
     object-fit: contain;
 }
 
 .logo-img-footer {
-    height: 100px;
+    height: 120px;
     width: auto;
     object-fit: contain;
     background: white;
-    padding: 5px;
+    padding: 10px;
     border-radius: 8px;
 }
 
