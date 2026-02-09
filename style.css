@@ -604,11 +604,12 @@ footer {
     height: 90px;
     width: auto;
     object-fit: contain;
-    transform: scale(3.5);
+    transform: scale(2.2);
+    /* Reduced from 3.5 to fit better */
     transform-origin: left center;
     margin-left: 20px;
-    /* Crop 20% from top and bottom to hide whitespace */
-    clip-path: inset(20% 0 20% 0);
+    mix-blend-mode: multiply;
+    /* Hides white background without cutting logo */
 }
 
 .logo-img-footer {
