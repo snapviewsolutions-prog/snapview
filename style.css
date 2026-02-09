@@ -596,27 +596,19 @@ footer {
 
 /* Logo Styles */
 .logo-link {
-    display: block;
-    position: relative;
-    height: 90px;
-    width: 280px;
-    /* Fixed width */
-    overflow: hidden;
-    /* Strict, no-nonsense cropping */
+    display: flex;
+    align-items: center;
 }
 
 .logo-img {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    height: 100%;
+    height: 90px;
     width: auto;
     object-fit: contain;
-    transform: translateY(-50%) scale(3.5);
+    transform: scale(3.5);
     transform-origin: left center;
     margin-left: 20px;
-    mix-blend-mode: multiply;
-    /* Safety net for white background */
+    /* Crop 20% from top and bottom to hide whitespace */
+    clip-path: inset(20% 0 20% 0);
 }
 
 .logo-img-footer {
