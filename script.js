@@ -135,4 +135,36 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('click', (e) => {
         if (e.target === modal) closeModal();
     });
+
+
+    // Intro Video Logic
+    const introOverlay = document.getElementById('intro-overlay');
+    const introVideo = document.getElementById('intro-video');
+    const skipBtn = document.getElementById('skip-btn');
+
+    const finishIntro = () => {
+        if (introOverlay) {
+            introOverlay.classList.add('fade-out');
+            setTimeout(() => {
+                introOverlay.style.display = 'none';
+            }, 500);
+        }
+    };
+
+    if (introVideo) {
+        // Attempt autoplay
+        introVideo.play().catch(error => {
+            console.log("Autoplay prevented:", error);
+            // If autoplay fails (e.g. browser policy), show a play button or just skip
+        });
+
+        introVideo.addEventListener('ended', finishIntro);
+    }
+
+    if (skipBtn) {
+        skipBtn.addEventListener('click', () => {
+            if (introVideo) introVideo.pause();
+            finishIntro();
+        });
+    }
 });

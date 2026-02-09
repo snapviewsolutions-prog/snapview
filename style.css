@@ -671,3 +671,9 @@ footer {
 .modal-content .close-btn {
     padding: 0.8rem 2rem;
 }
+/* Intro Video Overlay */
+#intro-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; z-index: 9999; display: flex; justify-content: center; align-items: center; transition: opacity 0.5s ease-out; }
+#intro-video { width: 100%; height: 100%; object-fit: cover; }
+#skip-btn { position: absolute; bottom: 30px; right: 30px; background: rgba(255, 255, 255, 0.2); color: white; border: 1px solid white; padding: 10px 20px; border-radius: 5px; cursor: pointer; backdrop-filter: blur(5px); transition: background 0.3s; }
+#skip-btn:hover { background: rgba(255, 255, 255, 0.4); }
+.fade-out { opacity: 0; pointer-events: none; }
