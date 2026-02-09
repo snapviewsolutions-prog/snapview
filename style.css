@@ -596,24 +596,27 @@ footer {
 
 /* Logo Styles */
 .logo-link {
-    display: flex;
-    align-items: center;
-    height: 100%;
+    display: block;
+    position: relative;
+    height: 90px;
+    width: 280px;
+    /* Fixed width */
     overflow: hidden;
-    /* Ensure nothing spills out of the link container */
+    /* Strict, no-nonsense cropping */
 }
 
 .logo-img {
-    height: 90px;
-    /* Match nav height */
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 100%;
     width: auto;
     object-fit: contain;
-    transform: scale(2.8);
-    /* Keep large zoom */
+    transform: translateY(-50%) scale(3.5);
     transform-origin: left center;
     margin-left: 20px;
     mix-blend-mode: multiply;
-    /* CRITICAL: Makes white background transparent */
+    /* Safety net for white background */
 }
 
 .logo-img-footer {
