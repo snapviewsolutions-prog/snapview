@@ -127,8 +127,7 @@ ul {
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
-    overflow: hidden;
-    /* FORCE CLIP: Nothing can ever leave this box */
+    /* overflow: visible; Let the logo breathe */
 }
 
 .nav-container {
