@@ -602,9 +602,9 @@ footer {
     height: 70px;
     width: auto;
     object-fit: contain;
-    transform: scale(2.2);
+    transform: scale(3.5);
     transform-origin: left center;
-    margin-left: 15px;
+    margin-left: 25px;
 }
 
 .logo-img-footer {
