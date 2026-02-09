@@ -709,8 +709,8 @@ footer {
         max-height: 100vh;
         object-fit: contain;
         /* Keep contain for mobile */
-        transform: scale(1.0);
-        /* Reset scale on mobile to avoid cutting content */
+        transform: scale(1.15);
+        /* ALSO zoom on mobile to hide watermark */
     }
 }
 
