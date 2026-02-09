@@ -686,14 +686,20 @@ footer {
     align-items: center;
     transition: opacity 0.5s ease-out;
     cursor: pointer;
+    overflow: hidden;
+    /* Ensure zoomed video doesn't overflow */
 }
 
-width: 100%;
-height: 100%;
-object-fit: cover;
-/* Back to cover for desktop to fill screen */
-max-width: 100%;
-max-height: 100%;
+#intro-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Back to cover for desktop to fill screen */
+    max-width: 100%;
+    max-height: 100%;
+    transform: scale(1.1);
+    /* Zoom in slightly to crop out watermark */
+    transform-origin: center center;
 }
 
 @media (max-width: 768px) {
@@ -703,6 +709,8 @@ max-height: 100%;
         max-height: 100vh;
         object-fit: contain;
         /* Keep contain for mobile */
+        transform: scale(1.0);
+        /* Reset scale on mobile to avoid cutting content */
     }
 }
 
