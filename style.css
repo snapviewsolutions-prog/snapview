@@ -127,7 +127,8 @@ ul {
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
-    /* overflow: visible; Let the logo breathe */
+    overflow: hidden;
+    /* MANDATORY: Clips the logo's white bottom */
 }
 
 .nav-container {
@@ -137,14 +138,14 @@ ul {
     height: 100%;
 }
 
-.logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--primary-color);
-}
-
-.logo span {
-    color: var(--accent-color);
+.logo-img {
+    height: 90px;
+    width: auto;
+    object-fit: contain;
+    transform: scale(2.2);
+    /* Optimal size */
+    transform-origin: left center;
+    margin-left: 20px;
 }
 
 .nav-links {
