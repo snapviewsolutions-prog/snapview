@@ -12,7 +12,7 @@
     --bg-color: #F8FAFC;
     /* Slate 50 */
     --white: #FFFFFF;
-    --nav-height: 140px;
+    --nav-height: 90px;
     --transition: all 0.3s ease;
 }
 
@@ -599,17 +599,22 @@ footer {
 }
 
 .logo-img {
-    height: 120px;
+    height: 70px;
+    /* Fit within the 90px nav */
     width: auto;
     object-fit: contain;
+    transform: scale(1.5);
+    /* Visually enlarge without changing layout */
+    transform-origin: left center;
+    /* clear anchor */
 }
 
 .logo-img-footer {
-    height: 120px;
+    height: 80px;
     width: auto;
     object-fit: contain;
     background: white;
-    padding: 10px;
+    padding: 5px;
     border-radius: 8px;
 }
 
