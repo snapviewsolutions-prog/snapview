@@ -599,12 +599,11 @@ footer {
 }
 
 .logo-img {
-    height: 70px;
-    width: auto;
+    height: auto !important;
+    width: 280px !important;
+    max-height: none !important;
     object-fit: contain;
-    transform: scale(3.5);
-    transform-origin: left center;
-    margin-left: 25px;
+    margin-left: 0;
 }
 
 .logo-img-footer {
