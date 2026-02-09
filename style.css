@@ -597,21 +597,21 @@ footer {
     display: flex;
     align-items: center;
     height: 100%;
-    max-height: 90px;
-    /* Force strict height limit */
     overflow: hidden;
-    /* This chops off the white block below */
+    /* Ensure nothing spills out of the link container */
 }
 
 .logo-img {
-    height: 80px;
+    height: 90px;
+    /* Match nav height */
     width: auto;
     object-fit: contain;
     transform: scale(2.8);
-    /* Keep it big */
+    /* Keep large zoom */
     transform-origin: left center;
     margin-left: 20px;
-    /* Removed mix-blend-mode as strict clipping is cleaner */
+    mix-blend-mode: multiply;
+    /* CRITICAL: Makes white background transparent */
 }
 
 .logo-img-footer {
