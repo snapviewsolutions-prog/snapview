@@ -141,9 +141,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const introOverlay = document.getElementById('intro-overlay');
     const introVideo = document.getElementById('intro-video');
 
+    // Initially prevent animations
+    document.body.classList.add('video-active');
+
     const finishIntro = () => {
         if (introOverlay) {
             introOverlay.classList.add('fade-out');
+
+            // Enable animations
+            document.body.classList.remove('video-active');
+            document.body.classList.add('animations-active');
+
             setTimeout(() => {
                 introOverlay.style.display = 'none';
             }, 500);
