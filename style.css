@@ -697,6 +697,15 @@ footer {
     max-height: 100%;
 }
 
+@media (max-width: 768px) {
+    #intro-video {
+        width: 100vw;
+        height: auto;
+        max-height: 100vh;
+        object-fit: contain;
+    }
+}
+
 .fade-out {
     opacity: 0;
     pointer-events: none;
