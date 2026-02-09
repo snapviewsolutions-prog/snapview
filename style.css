@@ -677,3 +677,5 @@ footer {
 #skip-btn { position: absolute; bottom: 30px; right: 30px; background: rgba(255, 255, 255, 0.2); color: white; border: 1px solid white; padding: 10px 20px; border-radius: 5px; cursor: pointer; backdrop-filter: blur(5px); transition: background 0.3s; }
 #skip-btn:hover { background: rgba(255, 255, 255, 0.4); }
 .fade-out { opacity: 0; pointer-events: none; }
+
+#intro-overlay { cursor: pointer; }
