@@ -601,15 +601,12 @@ footer {
 }
 
 .logo-img {
-    height: 90px;
+    height: 80px;
+    /* Slightly smaller than nav height (90px) */
     width: auto;
     object-fit: contain;
-    transform: scale(2.2);
-    /* Reduced from 3.5 to fit better */
-    transform-origin: left center;
-    margin-left: 20px;
+    /* Removed scaling and margin as new logo behaves differently */
     mix-blend-mode: multiply;
-    /* Hides white background without cutting logo */
 }
 
 .logo-img-footer {
