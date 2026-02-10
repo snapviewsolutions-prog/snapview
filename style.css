@@ -578,7 +578,7 @@ footer {
     }
 
     .logo-img {
-        height: 60px;
+        height: 35px;
     }
 }
 
@@ -601,11 +601,10 @@ footer {
 }
 
 .logo-img {
-    height: 80px;
-    /* Slightly smaller than nav height (90px) */
+    height: 50px;
+    /* Reduced from 80px to standard size */
     width: auto;
     object-fit: contain;
-    /* Removed scaling and margin as new logo behaves differently */
     mix-blend-mode: multiply;
 }
 
