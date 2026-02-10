@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Find next index for next iteration
             currentCardIndex = (currentCardIndex + 1) % flipCards.length;
-        }, 3000);
+        }, 6000);
 
         // Hover events
         flipCards.forEach(card => {
