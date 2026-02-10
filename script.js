@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    const fadeElements = document.querySelectorAll('.card, .feature-card, .section-header, .stat-item, .contact-wrapper');
+    const fadeElements = document.querySelectorAll('.card, .flip-card, .feature-card, .section-header, .stat-item, .contact-wrapper');
     fadeElements.forEach(el => {
         el.classList.add('fade-in-scroll');
         observer.observe(el);
@@ -143,6 +143,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initially prevent animations
     document.body.classList.add('video-active');
+
+    // Auto Flip Logic
+    const flipCards = document.querySelectorAll('.flip-card');
+    let currentCardIndex = 0;
+    let flipInterval;
+    let isPaused = false;
+
+    if (flipCards.length > 0) {
+        // Start cycle: Flip one card every 3 seconds
+        flipInterval = setInterval(() => {
+            if (isPaused) return;
+
+            // Unflip previous card (or the last one if we are at 0)
+            const prevIndex = (currentCardIndex - 1 + flipCards.length) % flipCards.length;
+            flipCards[prevIndex].classList.remove('flipped');
+
+            // Flip current card
+            flipCards[currentCardIndex].classList.add('flipped');
+
+            // Find next index for next iteration
+            currentCardIndex = (currentCardIndex + 1) % flipCards.length;
+        }, 3000);
+
+        // Hover events
+        flipCards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                isPaused = true;
+            });
+            card.addEventListener('mouseleave', () => {
+                isPaused = false;
+            });
+        });
+    }
 
     const finishIntro = () => {
         if (introOverlay) {
