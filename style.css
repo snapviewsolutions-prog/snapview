@@ -868,6 +868,12 @@ body.animations-active .delay-2 {
     gap: 20px;
 }
 
+.flip-card-front h3 {
+    color: white !important;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
 .icon-box-large {
     width: 80px;
     height: 80px;
