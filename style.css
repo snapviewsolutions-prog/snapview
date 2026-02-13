@@ -629,8 +629,13 @@ ul {
         --nav-height: 80px;
     }
 
+    .logo-crop-container {
+        height: 50px;
+        width: 150px;
+    }
+
     .logo-img {
-        height: 45px;
+        height: 100px;
     }
 }
 
@@ -652,16 +657,26 @@ ul {
     align-items: center;
 }
 
-.logo-img {
-    height: 85px;
-    width: auto;
-    object-fit: contain;
-    /* Removed mix-blend-mode, adding containment for clean look */
+.logo-crop-container {
+    height: 80px;
+    width: 250px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: white;
-    padding: 2px;
     border-radius: 4px;
-    transform: scale(2.2);
-    margin-left: 10px;
+    padding: 2px;
+}
+
+.logo-img {
+    height: 160px;
+    /* 2x height of container to zoom in */
+    width: auto;
+    max-width: none;
+    /* Allow overflowing container width */
+    object-fit: contain;
+    margin-left: 0;
 }
 
 .logo-img-footer {
