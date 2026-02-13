@@ -630,7 +630,7 @@ ul {
     }
 
     .logo-img {
-        height: 35px;
+        height: 45px;
     }
 }
 
@@ -653,7 +653,7 @@ ul {
 }
 
 .logo-img {
-    height: 70px;
+    height: 85px;
     width: auto;
     object-fit: contain;
     /* Removed mix-blend-mode, adding containment for clean look */
