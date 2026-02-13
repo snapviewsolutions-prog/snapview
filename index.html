@@ -12,6 +12,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/jpg" href="assets/logo-final.jpg">
     <link rel="stylesheet" href="style.css?v=logo-max-zoom-3.5x">
+    <style>
+        /* CRITICAL: Inline styles to force logo update immediately */
+        .logo-crop-container {
+            height: 80px !important;
+            width: 250px !important;
+            overflow: hidden !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            background: white !important;
+            border-radius: 4px !important;
+            padding: 2px !important;
+        }
+
+        .logo-img {
+            height: 160px !important;
+            width: auto !important;
+            max-width: none !important;
+            object-fit: contain !important;
+            transform: scale(1.75) !important;
+            margin: 0 !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,7 +44,7 @@
         <div class="container nav-container">
             <a href="#" class="logo-link">
                 <div class="logo-crop-container">
-                    <img src="assets/logo-final.jpg" alt="Snapview Solution">
+                    <img src="assets/logo-final.jpg?v=force-update" alt="Snapview Solution" class="logo-img">
                 </div>
             </a>
             <ul class="nav-links">
