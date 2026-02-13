@@ -677,6 +677,7 @@ ul {
     /* Allow overflowing container width */
     object-fit: contain;
     margin-left: 0;
+    transform: scale(1.75);
 }
 
 .logo-img-footer {
