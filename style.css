@@ -140,7 +140,8 @@ ul {
 }
 
 .logo-img {
-    height: 75px;
+    height: 85px;
+    /* Max safe size for 90px nav */
     width: auto;
     object-fit: contain;
     mix-blend-mode: multiply;
@@ -635,13 +636,11 @@ ul {
         --nav-height: 80px;
     }
 
-    .logo-crop-container {
-        height: 50px;
-        width: 150px;
-    }
+
 
     .logo-img {
-        height: 50px;
+        height: 60px;
+        /* Max safe size for 80px mobile nav */
     }
 }
 
