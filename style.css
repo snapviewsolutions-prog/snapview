@@ -139,7 +139,13 @@ ul {
     height: 100%;
 }
 
-/* Duplicate logo-img removed */
+.logo-img {
+    height: 75px;
+    width: auto;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    margin-left: 20px;
+}
 
 .nav-links {
     display: flex;

@@ -11,33 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/jpg" href="assets/logo-final.jpg">
-    <link rel="stylesheet" href="style.css?v=v-logo-consolidated">
-    <style>
-        /* CRITICAL: Inline styles to force logo update immediately */
-        .logo-crop-container {
-            height: 80px !important;
-            width: 250px !important;
-            overflow: hidden !important;
-            display: flex !important;
-            align-items: center !important;
-            justify-content: center !important;
-            background: white !important;
-            border-radius: 4px !important;
-            padding: 2px !important;
-            /* Debug Marker: If you see this red dashed border, the code IS updated */
-            border: 2px dashed red !important;
-        }
+    <link rel="stylesheet" href="style.css?v=v-logo-cleanup-final">
 
-        .logo-img {
-            height: 160px !important;
-            width: auto !important;
-            max-width: none !important;
-            object-fit: contain !important;
-            transform: scale(2.5) !important;
-            /* Increased from 1.75 */
-            margin: 0 !important;
-        }
-    </style>
 </head>
 
 <body>
@@ -46,9 +21,7 @@
     <nav class="navbar">
         <div class="container nav-container">
             <a href="#" class="logo-link">
-                <div class="logo-crop-container">
-                    <img src="assets/logo-final.jpg?v=force-update" alt="Snapview Solution" class="logo-img">
-                </div>
+                <img src="assets/logo-final.jpg" alt="Snapview Solution" class="logo-img">
             </a>
             <ul class="nav-links">
                 <li><a href="#transform">Home</a></li>
