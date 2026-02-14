@@ -640,8 +640,8 @@ ul {
 
 
     .logo-img {
-        height: 60px;
-        /* Max safe size for 80px mobile nav */
+        height: 50px;
+        /* Balanced size for 80px mobile nav */
     }
 }
 
