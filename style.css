@@ -140,7 +140,8 @@ ul {
 }
 
 .logo-img {
-    height: 80px;
+    height: 75px;
+    /* Balanced size for 90px nav */
     /* Standard size for cropped logo */
     width: auto;
     object-fit: contain;
