@@ -432,6 +432,12 @@ ul {
     border-radius: 20px;
 }
 
+.form-title {
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+    color: var(--primary-color);
+}
+
 .form-group {
     margin-bottom: 20px;
 }
@@ -777,7 +783,8 @@ ul {
         font-size: 2rem;
     }
 
-    .contact-info h2 {
+    .contact-info h2,
+    .form-title {
         font-size: 2rem;
     }
 
