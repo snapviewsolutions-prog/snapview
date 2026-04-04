@@ -400,6 +400,114 @@ ul {
     margin-bottom: 12px;
 }
 
+/* Who We Are Section */
+.who-we-are-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.info-card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.info-accent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background: var(--accent-color);
+}
+
+.info-accent.dark {
+    background: var(--primary-color);
+}
+
+.est-tag {
+    text-align: center;
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 15px;
+    border-radius: 50px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+/* Values Section */
+.values-grid {
+    gap: 20px;
+}
+
+.value-card {
+    background: #f8fafc;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    background: white;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.value-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Industries Section */
+.industries-grid {
+    gap: 30px;
+}
+
+.industry-card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 20px;
+    border-top: 5px solid var(--accent-color);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.industry-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Process Section */
+.process-grid {
+    gap: 30px;
+}
+
+.process-step {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+    border: 1px solid #e2e8f0;
+}
+
+.step-num {
+    width: 40px;
+    height: 40px;
+    background: var(--accent-color);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
 /* Contact Section */
 .contact-section {
     background: white;
